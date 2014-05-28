@@ -1,5 +1,3 @@
-require 'boolean'
-
 # @private
 class Object
 
@@ -41,7 +39,7 @@ module HasMetadataColumn
           return value
         end
       elsif type == Boolean then
-        return value.parse_bool
+        return %w( y Y 1 t T ).include? value[0,1]
       elsif type == Date then
         return nil if value.nil?
         begin

@@ -34,7 +34,6 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<rails>, [">= 4.0"])
-      s.add_runtime_dependency(%q<boolean>, [">= 0"])
       s.add_development_dependency(%q<rspec>, [">= 0"])
       s.add_development_dependency(%q<sqlite3>, [">= 0"])
       s.add_development_dependency(%q<yard>, [">= 0"])
@@ -42,7 +41,6 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<jeweler>, [">= 0"])
     else
       s.add_dependency(%q<rails>, [">= 4.0"])
-      s.add_dependency(%q<boolean>, [">= 0"])
       s.add_dependency(%q<rspec>, [">= 0"])
       s.add_dependency(%q<sqlite3>, [">= 0"])
       s.add_dependency(%q<yard>, [">= 0"])
@@ -51,7 +49,6 @@ Gem::Specification.new do |s|
     end
   else
     s.add_dependency(%q<rails>, [">= 4.0"])
-    s.add_dependency(%q<boolean>, [">= 0"])
     s.add_dependency(%q<rspec>, [">= 0"])
     s.add_dependency(%q<sqlite3>, [">= 0"])
     s.add_dependency(%q<yard>, [">= 0"])
